@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {          /* reset css */
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-de-fundo: #00030C;
+    --cor-botoes: #167BF7;
+    --cor-h1: #ffff;
+    --cor-p: #C0C0C0;
+    --fonte-principal: "Inter";
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-h1);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container {
+    height: 100vh;
+    display: grid; /* determina a separação de itens com o grid */
+    grid-template-columns: 50% 50%; /* determina a largura de cada coluna */
+}
+
+.principal {
+    background-image: url(assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container__titulo {
+    font-size: 28;
+    font-weight: 700;
+}
+
+.container__botao {
+    background-color: var(--cor-botoes);
+    color: var(--cor-h1);
+    text-decoration: none;
+    padding: 1em; /* em - medida conforme o tamanho da fonte */
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+}
+
+.botao_secundario {
+    background-color: transparent; /* botao transparente */
+    border: 1px solid #fff;
+}
+
+.container__aviso {
+    color: var(--cor-p);
+    font-size: 12px;
+}
