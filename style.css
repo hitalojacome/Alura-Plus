@@ -17,7 +17,7 @@ body {
     background-color: var(--cor-de-fundo);
     color: var(--cor-h1);
     font-family: var(--fonte-principal);
-    font-size: 16px;
+    font-size: 1rem;  /* 1rem equivale a 16px */
     font-weight: 400;
 }
 
@@ -34,8 +34,13 @@ body {
 }
 
 .container__titulo {
-    font-size: 28;
+    font-size: 1.75rem; /* 28px convertidos para rem */
     font-weight: 700;
+    text-align: center;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
 }
 
 .container__botao {
