@@ -98,3 +98,54 @@ body {
 .container__descricao {
     padding: 2em;
 }
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /* retira os discos da lista */
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--cor-h1);
+    
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--cor-h1);
+}
+
+.rodape {
+    text-align: center;
+    width: 1200px;
+    margin: 5em 5em 5em 5em;
+}
+
+.rodape__logo {
+    padding: 2%;
+    margin: auto;
+}
+
+.rodape__lista {
+    padding: 1%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--cor-h1);
+}
+
+.rodape__texto {
+    padding: 1%;
+    font-size: 14px;
+    color: var(--cor-p);
+}
