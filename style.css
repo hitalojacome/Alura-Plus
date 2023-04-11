@@ -8,6 +8,7 @@
 :root {
     --cor-de-fundo: #00030C;
     --cor-botoes: #167BF7;
+    --cor-botoes-hover: #2887fc;
     --cor-h1: #ffff;
     --cor-p: #C0C0C0;
     --fonte-principal: "Inter";
@@ -56,9 +57,22 @@ body {
     margin-bottom: 0.3em;
 }
 
+.container__botao:hover {
+    padding: 0.9em;
+    background-color: transparent;
+    border: 2px solid var(--cor-h1);
+    box-sizing: border-box;
+}
+
 .botao_secundario {
     background-color: transparent; /* botao transparente */
     border: 2px solid var(--cor-h1);
+}
+
+.botao_secundario:hover {
+    background-color: var(--cor-botoes);
+    border: none;
+    padding: 1.15em;
 }
 
 .container__aviso {
@@ -123,8 +137,7 @@ body {
 
 .rodape {
     text-align: center;
-    width: 1200px;
-    margin: 5em 5em 5em 5em;
+    margin: 5em 3em;
 }
 
 .rodape__logo {
@@ -133,19 +146,30 @@ body {
 }
 
 .rodape__lista {
-    padding: 1%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     list-style-type: none;
+    margin-top: 1em;
 }
 
-.lista__link a {
+.lista__link a{
     text-decoration: none;
-    color: var(--cor-h1);
+    color: var(--branco-principal);
+    margin-left: 1em;
+}
+
+.lista__link a:hover {
+    color: var(--cor-botoes);
+    font-size: 17px;
+    transition: .3s;
+}
+
+.lista__link a:active {
+    color: purple;
 }
 
 .rodape__texto {
-    padding: 1%;
-    font-size: 14px;
+    margin: 1em 0;
     color: var(--cor-p);
+    font-size: 14px;
 }
